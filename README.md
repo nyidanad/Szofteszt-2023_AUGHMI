@@ -1,0 +1,1 @@
+# Szofteszt-2023_AUGHMI
