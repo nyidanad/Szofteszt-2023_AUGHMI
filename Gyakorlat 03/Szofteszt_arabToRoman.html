@@ -20,7 +20,18 @@
       return 'II';
   }
 
-// TESZTEK
+  // LEGNAGYOBB RÓMAI SZÁM MEGTALÁLÁSA
+  function findGreatest(n) {
+    const keys = Object.keys(romanNumbers).map(Number).sort((a, b) => b - a);
+
+    for(i = 0; i < keys.length; i++) {
+      if(n >= key[i])
+        n = romanNumbers[i]
+    }
+    return n
+  }
+
+  // TESZTEK
   QUnit.module('arabicToRoman', function() {
     QUnit.test('null', function(assert) {
       assert.equal(arabicToRoman(), -1);
