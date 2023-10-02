@@ -12,12 +12,18 @@
   function arabicToRoman(n) {
     if(n == null)
       return -1;
+    else if(n == 1)
+      return 'I';
   }
 
 // TESZTEK
   QUnit.module('arabicToRoman', function() {
     QUnit.test('null', function(assert) {
-        assert.equal(arabicToRoman(), -1);
-      });
+      assert.equal(arabicToRoman(), -1);
+    });
+
+    QUnit.test('egy', function(assert) {
+      assert.equal(arabicToRoman(1), 'I');
+    });
   });
 </script>
