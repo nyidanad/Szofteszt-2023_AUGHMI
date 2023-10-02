@@ -1,5 +1,5 @@
 # Szoftvertesztelés
-> Név: Nyíri Dániel
-> NK: AUGHMI
-> Szak: Üzemmérnök-informatikus
+> Név: Nyíri Dániel<br>
+> NK: AUGHMI<br>
+> Szak: Üzemmérnök-informatikus<br>
 > Email: nyiridaniel3@gmail.com
