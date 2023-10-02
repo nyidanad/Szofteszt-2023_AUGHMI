@@ -34,6 +34,19 @@
     return greatest
   }
 
+  // RÓMAI SZÁM ÖSSZEÁLLÍTÁSA
+  function getRoman(n) {
+    roman = '';
+
+    while (n > 0) {
+      greatest = findGreatest(n);
+
+      roman += greatest;
+      n -= Object.keys(romanNumbers).find(key => romanNumbers[key] == greatest);
+    }
+    return roman;
+  }
+
   // KIEMELT RÓMAI SZÁMOK
   const romanNumbers = {
     1: 'I',
