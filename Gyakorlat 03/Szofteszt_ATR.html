@@ -16,6 +16,9 @@
       roman += 'I'
     }
 
+    if(n == 4)
+      return 'IV'
+
     return roman
   }
 
@@ -36,6 +39,10 @@
 
     QUnit.test('három', function(assert) {
       assert.equal(arabicToRoman(3), 'III');
+    });
+
+    QUnit.test('négy', function(assert) {
+      assert.equal(arabicToRoman(4), 'V');
     });
   });
 </script>
