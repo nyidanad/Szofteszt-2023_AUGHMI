@@ -10,21 +10,20 @@
 
 <script>
   function arabicToRoman(n) {
-    if(n == null)
-      return -1;
-    else if(n == 1)
-      return 'I'
-    else if(n == 2)
-      return 'II'
-    else
-      return 'III'
+    roman = ''
+
+    for(i = 0; i < n; i++) {
+      roman += 'I'
+    }
+
+    return roman
   }
 
 
   // TESZTEK
   QUnit.module('arabicToRoman', function() {
     QUnit.test('null', function(assert) {
-      assert.equal(arabicToRoman(), -1);
+      assert.equal(arabicToRoman(), '');
     });
 
     QUnit.test('egy', function(assert) {
