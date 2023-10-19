@@ -13,6 +13,11 @@
     roman = ""
 
     while(n > 0) {
+      if(n >= 40) {
+        roman += "XL"
+        n = n - 40
+      }
+
       if(n >= 10) {
         roman += "X"
         n = n - 10
