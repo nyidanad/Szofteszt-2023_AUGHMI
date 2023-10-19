@@ -20,6 +20,8 @@
       return 'IV'
     else if(n == 5)
       return 'V'
+    else if(n == 6)
+      return 'VI'
 
     return roman
   }
@@ -49,6 +51,10 @@
 
     QUnit.test('öt', function(assert) {
       assert.equal(arabicToRoman(5), 'V');
+    });
+
+    QUnit.test('hat', function(assert) {
+      assert.equal(arabicToRoman(6), 'V');
     });
   });
 </script>
