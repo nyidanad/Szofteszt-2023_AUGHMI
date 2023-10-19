@@ -14,8 +14,10 @@
       return -1;
     else if(n == 1)
       return 'I'
-    else
+    else if(n == 2)
       return 'II'
+    else
+      return 'III'
   }
 
 
@@ -31,6 +33,10 @@
 
     QUnit.test('kettő', function(assert) {
       assert.equal(arabicToRoman(2), 'II');
+    });
+
+    QUnit.test('három', function(assert) {
+      assert.equal(arabicToRoman(3), 'IV');
     });
   });
 </script>
