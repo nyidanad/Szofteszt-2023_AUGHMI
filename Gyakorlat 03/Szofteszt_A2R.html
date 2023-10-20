@@ -30,6 +30,8 @@
 
     else if (n == 9)
       return 'IX'
+    else if (n == 10)
+      return 'X'
     
     return roman
   }
@@ -67,6 +69,10 @@
 
     QUnit.test('kilenc', function(assert) {
       assert.equal(arabicToRoman(9), 'IX');
+    });
+
+    QUnit.test('tíz', function(assert) {
+      assert.equal(arabicToRoman(10), 'IX');
     });
   });
 </script>
