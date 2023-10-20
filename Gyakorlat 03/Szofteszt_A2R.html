@@ -21,12 +21,15 @@
     else if (n == 4)
       return 'IV'
 
-    else if (n >= 5) {
+    else if (n >= 5 && n < 9) {
       roman = 'V'
       for(i = 0; i < n-5; i++) {
         roman += 'I'
       }
     }
+
+    else if (n == 9)
+      return 'IX'
     
     return roman
   }
@@ -60,6 +63,10 @@
 
     QUnit.test('hat', function(assert) {
       assert.equal(arabicToRoman(6), 'VI');
+    });
+
+    QUnit.test('kilenc', function(assert) {
+      assert.equal(arabicToRoman(9), 'VI');
     });
   });
 </script>
