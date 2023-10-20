@@ -12,16 +12,21 @@
   function arabicToRoman(n) {
     roman = ''
 
-    for(i = 0; i < n; i++) {
-      roman += 'I'
-    }
+    if (n < 4) {
+      for(i = 0; i < n; i++) {
+        roman += 'I'
+      }
+    } 
 
-    if (n == 4)
+    else if (n == 4)
       return 'IV'
-    else if (n == 5)
-      return 'V'
-    else if (n == 6)
-      return 'VI'
+
+    else if (n >= 5) {
+      roman = 'V'
+      for(i = 0; i < n-5; i++) {
+        roman += 'I'
+      }
+    }
     
     return roman
   }
