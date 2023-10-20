@@ -13,7 +13,12 @@
     roman = ''
 
     while(n > 0) {
-      if (n >= 50) {
+      if (n >= 90) {
+        roman += 'XC'
+        n = n - 90
+      }
+
+      else if (n >= 50) {
         roman += 'L'
         n = n - 50
       }
