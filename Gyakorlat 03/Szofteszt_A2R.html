@@ -13,7 +13,12 @@
     roman = ''
 
     while(n > 0) {
-      if (n >= 10) {
+      if (n >= 40) {
+        roman += 'XL'
+        n = n - 40
+      }
+      
+      else if (n >= 10) {
         roman += 'X'
         n = n - 10
       }
@@ -98,7 +103,7 @@
     });
 
     QUnit.test('negyven', function(assert) {
-      assert.equal(arabicToRoman(40), 'XL');
+      assert.equal(arabicToRoman(40), 'L');
     });
   });
 </script>
