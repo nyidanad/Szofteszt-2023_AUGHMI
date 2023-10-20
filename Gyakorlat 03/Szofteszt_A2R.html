@@ -12,6 +12,8 @@
   function arabicToRoman(n) {
     if (n == '')
       return null
+    else if (n == 1)
+      return 'I'
   }
 
 
@@ -19,6 +21,10 @@
   QUnit.module('arabicToRoman', function() {
     QUnit.test('null', function(assert) {
       assert.equal(arabicToRoman(), );
+    });
+
+    QUnit.test('egy', function(assert) {
+      assert.equal(arabicToRoman(1), 'II');
     });
   });
 </script>
