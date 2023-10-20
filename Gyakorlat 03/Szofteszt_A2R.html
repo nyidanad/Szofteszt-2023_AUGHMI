@@ -134,5 +134,9 @@
     QUnit.test('ezer', function(assert) {
       assert.equal(arabicToRoman(1000), 'M');
     });
+
+    QUnit.test('négyezerházszátkilencvenkettő', function(assert) {
+      assert.equal(arabicToRoman(4692), 'MMMMDCXCII');
+    });
   });
 </script>
