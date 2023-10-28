@@ -17,6 +17,11 @@ class TestLRV(unittest.TestCase):
     result = rover.move('f')
     self.assertEqual(result, (1, 0, 'E'))
 
+  def test_forward_west(self):
+    rover = LRV(0, 0, 'W')
+    result = rover.move('f')
+    self.assertEqual(result, (-1, 0, 'W'))
+
 
 if __name__ == '__main__':
   unittest.main()
