@@ -27,6 +27,10 @@ class TestLRV(unittest.TestCase):
     result = rover.move('b')
     self.assertEqual(result, (1, 0, 'E'))
 
+  def test_left(self):
+    rover = LRV(0, 0, 'N')
+    result = rover.move('l')
+    self.assertEqual(result, (0, 0, 'W'))
 
 if __name__ == '__main__':
   unittest.main()
