@@ -1,8 +1,9 @@
 class LRV:
-  def __init__(self, x, y, direction):
+  def __init__(self, x, y, direction, obstacles):
     self.x = x
     self.y = y
     self.direction = direction
+    self.obstacles = obstacles
 
   def move(self, moves):
     for m in moves:
@@ -48,5 +49,8 @@ class LRV:
 
       else:
         raise ValueError("Invalid movement!")
+
+    if (self.x, self.y) in self.obstacles:
+      return "WARNING: Obstacle!"
 
     return self.x, self.y, self.direction
